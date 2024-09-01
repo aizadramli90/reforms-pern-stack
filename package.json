@@ -2,7 +2,7 @@
   "name": "request-for-maintenance-and-safety-system",
   "version": "1.0.0",
   "description": "MERN Coding Bootcamp Project",
-  "main": "index.js",
+  "main": "server.js",
   "type": "module",
   "scripts": {
     "dev": "node --watch server.js",
