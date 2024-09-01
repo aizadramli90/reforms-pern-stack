@@ -9,7 +9,7 @@
     "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "server": "nodemon server.js",
-    "build": "npm install --prefix client/reforms_web_app_react && npm run build --prefix client/reforms_web_app_react"
+    "build": "npm install && npm install --prefix client/reforms_web_app_react && npm run build --prefix client/reforms_web_app_react"
   },
   "author": "Muhammad Aizad",
   "license": "ISC",
