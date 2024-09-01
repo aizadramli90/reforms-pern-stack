@@ -79,15 +79,7 @@ app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, '/client/reforms_web_app_react/dist', 'index.html'));
 })
 
-//upload image - TO BE ADDED SOON
-/* app.post("/upload", isAuth, upload.single('image'), uploadImage);
- */
-//route to handle 404 and show page 404.html
-app.use((req, res) => {
-    /* res.status(404).json({message: "Route not found"}); */
-    res.status(404).sendFile(path.join(__dirname, '../frontend/public', '404.html'));
-    
-})
+
 
 
 /* app.get('/', (req, res) => res.send('Hello World!')) */
