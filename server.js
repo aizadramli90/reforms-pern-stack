@@ -55,8 +55,8 @@ databaseInit();
 
 
 //routes
-app.get("/", healthController.get);
-app.post("/", healthController.post);
+app.get("/health", healthController.get);
+app.post("/health", healthController.post);
 app.get("/admin/users", isAuth, readAllUsers);
 app.delete("/users/:id", deleteUser)
 
