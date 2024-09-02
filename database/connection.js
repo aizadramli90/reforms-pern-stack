@@ -38,6 +38,6 @@ export async function databaseInit() {
 
     } catch (error) {
         console.error("Database connection failed");
-        console.log(`${process.env.PGHOST} ${process.env.PGUSER} ${process.env.PGPASSWORD} ${process.env.PGDATABASE} ${process.env.PGPORT}`);
+        console.log(`Host:${process.env.PGHOST}, User: ${process.env.PGUSER}, Password: ${process.env.PGPASSWORD}, Database: ${process.env.PGDATABASE}, Port: ${process.env.PGPORT}.`);
     }
 }
