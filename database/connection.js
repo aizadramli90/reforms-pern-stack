@@ -20,7 +20,7 @@ export const pool = new Pool({
     max: 20,
     idleTimeoutMillis: 30000,
     connectionTimeoutMillis: 2000,
-    ssl: { rejectUnauthorized: false }
+    // ssl: { rejectUnauthorized: false }
 });
 
 
@@ -38,5 +38,6 @@ export async function databaseInit() {
 
     } catch (error) {
         console.error("Database connection failed");
+        console.log(`${process.env.PGHOST} ${process.env.PGUSER} ${process.env.PGPASSWORD} ${process.env.PGDATABASE} ${process.env.PGPORT}`);
     }
 }
