@@ -9,6 +9,7 @@ const Register = props => {
   const [password, setPassword] = useState('');
   const navigate = useNavigate();
   const BASE_URL = import.meta.env.VITE_BASE_URL; 
+  console.log(`Base url? ${BASE_URL}`);
 
   const handleSubmit = (event) => {
     event.preventDefault();
